@@ -1,0 +1,168 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import="java.sql.*" %>
+<script language = "javascript">
+
+function writeCheck()
+{
+	var form = document.writeform;
+	
+	if(!form.proname.value)
+	{
+		alert("제품 명을 선택하세요.");
+		form.name.focus();
+		return;
+	}
+	
+	if(!form.proloc.value)
+	{
+		alert("생산지를 적어주세요.");
+		form.proloc.focus();
+		return;
+	}
+	if(!form.pronumber.value)
+	{
+		alert("개수를 입력하세요.");
+		form.pronumber.focus();
+		return;
+	}
+	form.submit();
+	
+}
+</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+ 		<title> 공산품 관리 </title>
+	</head>
+ 	<body>
+ 		<table>
+			 <center>
+				 <form name=writeform method=post action="write_ok.jsp">
+				 			<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<!-- 				 			제품 명 : <input name="proname" placeholder="공산품 제품명"/>
+				 			생산지 : 	<input name="proloc" placeholder="생산지" />
+							개수 : 	<input name="pronumber" placeholder="공산품 개수"/> -->
+							
+							<!-- 제품 명 : <select name="proname" size="1">
+										<option value="" selected disabled hidden> 제품 명을 선택하세요.</option>
+										<option value="AIR JORDAN 1">AIR JORDAN 1</option>
+										<option value="YEEZY BOOST">YEEZY BOOST</option>
+									</select>
+									</select> -->
+									
+							제품 명 : <input autocomplete=off list="product" name="proname" placeholder="공산품 제품 명">
+									<datalist id="product">
+											<option value="AIR JORDAN1">AIR JORDAN1</option>
+											<option value="YEEZY BOOST">YEEZY BOOST</option>
+									</datalist>
+							생산지 : 	<input autocomplete=off name="proloc" placeholder="생산지" />
+							개수 : 	<input autocomplete=off name="pronumber" placeholder="공산품 개수"/>
+							
+							<p>
+  <a href="https://github.com/w3c/html/issues/932#issuecomment-315647887" target="_315647887">What this is for</a>
+</p>
+
+<div hidden>
+  <img src="http://j4p.us/0C0O04383n1N/Screen%20Shot%202017-07-17%20at%2012.52.48%20AM.png" alt="">
+</div>
+
+<div class="demo-wrapper">
+  
+<div>
+  <label for="input-a">Standard Datalist</label>
+  <input type="text" id="input-a" placeholder="volvo" list="cars-a" />
+  <datalist id="cars-a">
+    <select>
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+  </datalist>
+</div>
+
+
+
+
+<div>
+  
+  <div class="optgroup-list-wrapper" style="display: inline-block">
+    <label for="input-b">Polyfilled Datalist w/ optgroup</label>
+    <input autofocus type="text" placeholder="volvo" id="input-b" data-optgroup-list="cars-b" />
+  <datalist id="cars-b">
+    <select>
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+  </datalist>
+  
+  <div class="list-options" hidden>
+    <ul>
+      <li>
+        <details open>
+          <summary>Swedish Cars</summary>
+          <ul>
+            <li class="option" data-value="volvo">
+              <span class="value">volvo</span>
+              <span class="label">Volvo</span>
+            </li>
+            <li class="option" data-value="saab">
+              <span class="value">saab</span>
+              <span class="label">Saab</span>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details open>
+          <summary>German Cars</summary>
+          <ul>
+            <li class="option" data-value="mercedes">
+              <span class="value">mercedes</span>
+              <span class="label">Mercedes</span>
+            </li>
+            <li class="option" data-value="audi">
+              <span class="value">audi</span>
+              <span class="label">Audi</span>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+							
+							
+							
+				 </form>
+			 </center>
+		</table>
+ 
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  		<tr>
+  			<td colspan="4" height="5"></td>
+  		</tr>
+  		<tr align="center">
+   			<td>
+   				<input type=button value="등록" OnClick = "javascript:writeCheck();">
+   			</td>
+  		</tr>
+		</table>
+	</body> 
+</html>
+
+
+

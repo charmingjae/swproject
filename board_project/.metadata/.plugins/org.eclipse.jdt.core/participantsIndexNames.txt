@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/Users/chaminjae/Desktop/블록체인/productmanager/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1067154389.index
+/board_project/src
+/Users/chaminjae/Desktop/블록체인/board_project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1067154389.index
+/board_project/src

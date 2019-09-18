@@ -1,0 +1,1526 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 00:41:49.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+02-May-2019 00:41:49.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+02-May-2019 00:41:49.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+02-May-2019 00:41:49.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+02-May-2019 00:41:49.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.4
+02-May-2019 00:41:49.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+02-May-2019 00:41:49.790 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+02-May-2019 00:41:49.790 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           11.0.2+9-LTS
+02-May-2019 00:41:49.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+02-May-2019 00:41:49.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 00:41:49.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 00:41:49.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2019 00:41:49.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2019 00:41:49.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 00:41:49.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/usr/local/Cellar/tomcat/9.0.19/libexec/conf/logging.properties
+02-May-2019 00:41:49.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2019 00:41:49.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2019 00:41:49.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2019 00:41:49.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-May-2019 00:41:49.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+02-May-2019 00:41:49.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 00:41:49.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 00:41:49.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/usr/local/Cellar/tomcat/9.0.19/libexec/temp
+02-May-2019 00:41:49.800 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+02-May-2019 00:41:49.871 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+02-May-2019 00:41:49.943 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+02-May-2019 00:41:49.947 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+02-May-2019 00:41:49.961 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[AJP/1.3-8009]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+02-May-2019 00:41:49.979 INFO [main] org.apache.catalina.startup.Catalina.load [913] 밀리초 내에 서버가 초기화되었습니다.
+02-May-2019 00:41:50.110 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+02-May-2019 00:41:50.110 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+02-May-2019 00:41:50.124 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+02-May-2019 00:41:50.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [412] 밀리초에 완료되었습니다.
+02-May-2019 00:41:50.537 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+02-May-2019 00:41:50.611 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [73] 밀리초에 완료되었습니다.
+02-May-2019 00:41:50.611 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+02-May-2019 00:41:51.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [530] 밀리초에 완료되었습니다.
+02-May-2019 00:41:51.143 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+02-May-2019 00:41:51.170 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [27] 밀리초에 완료되었습니다.
+02-May-2019 00:41:51.170 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+02-May-2019 00:41:51.201 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [30] 밀리초에 완료되었습니다.
+02-May-2019 00:41:51.207 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,227] 밀리초 내에 시작되었습니다.
+02-May-2019 00:41:51.216 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+ java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+02-May-2019 00:41:51.217 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+02-May-2019 00:41:51.217 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+02-May-2019 00:41:51.218 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+02-May-2019 00:41:51.251 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+02-May-2019 00:41:51.251 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+02-May-2019 00:41:51.251 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+02-May-2019 00:41:51.252 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:15:52.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+02-May-2019 02:15:52.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+02-May-2019 02:15:52.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+02-May-2019 02:15:52.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+02-May-2019 02:15:52.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.4
+02-May-2019 02:15:52.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+02-May-2019 02:15:52.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+02-May-2019 02:15:52.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+02-May-2019 02:15:52.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+02-May-2019 02:15:52.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:15:52.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:15:52.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2019 02:15:52.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2019 02:15:52.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:15:52.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/usr/local/Cellar/tomcat/9.0.19/libexec/conf/logging.properties
+02-May-2019 02:15:52.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2019 02:15:52.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2019 02:15:52.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2019 02:15:52.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-May-2019 02:15:52.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+02-May-2019 02:15:52.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:15:52.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:15:52.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/usr/local/Cellar/tomcat/9.0.19/libexec/temp
+02-May-2019 02:15:52.860 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+02-May-2019 02:15:52.911 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+02-May-2019 02:15:52.962 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+02-May-2019 02:15:52.968 INFO [main] org.apache.catalina.startup.Catalina.load [738] 밀리초 내에 서버가 초기화되었습니다.
+02-May-2019 02:15:53.040 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+02-May-2019 02:15:53.040 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+02-May-2019 02:15:53.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+02-May-2019 02:15:53.466 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [416] 밀리초에 완료되었습니다.
+02-May-2019 02:15:53.467 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+02-May-2019 02:15:53.509 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [41] 밀리초에 완료되었습니다.
+02-May-2019 02:15:53.509 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+02-May-2019 02:15:53.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [315] 밀리초에 완료되었습니다.
+02-May-2019 02:15:53.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+02-May-2019 02:15:53.847 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [23] 밀리초에 완료되었습니다.
+02-May-2019 02:15:53.848 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+02-May-2019 02:15:53.877 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [29] 밀리초에 완료되었습니다.
+02-May-2019 02:15:53.885 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+02-May-2019 02:15:53.920 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+02-May-2019 02:15:53.928 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [959] 밀리초 내에 시작되었습니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:24:58.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+02-May-2019 02:24:58.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+02-May-2019 02:24:58.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+02-May-2019 02:24:58.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+02-May-2019 02:24:58.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.4
+02-May-2019 02:24:58.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+02-May-2019 02:24:58.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+02-May-2019 02:24:58.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+02-May-2019 02:24:58.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+02-May-2019 02:24:58.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:24:58.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:24:58.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2019 02:24:58.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2019 02:24:58.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:24:58.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/usr/local/cellar/tomcat/9.0.19/libexec/conf/logging.properties
+02-May-2019 02:24:58.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2019 02:24:58.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2019 02:24:58.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2019 02:24:58.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-May-2019 02:24:58.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+02-May-2019 02:24:58.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:24:58.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:24:58.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/usr/local/cellar/tomcat/9.0.19/libexec/temp
+02-May-2019 02:24:58.990 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+02-May-2019 02:24:59.078 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+02-May-2019 02:24:59.146 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+02-May-2019 02:24:59.149 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+02-May-2019 02:24:59.151 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[AJP/1.3-8009]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+02-May-2019 02:24:59.155 INFO [main] org.apache.catalina.startup.Catalina.load [865] 밀리초 내에 서버가 초기화되었습니다.
+02-May-2019 02:24:59.216 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+02-May-2019 02:24:59.217 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+02-May-2019 02:24:59.228 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+02-May-2019 02:24:59.649 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [422] 밀리초에 완료되었습니다.
+02-May-2019 02:24:59.650 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+02-May-2019 02:24:59.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [59] 밀리초에 완료되었습니다.
+02-May-2019 02:24:59.709 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+02-May-2019 02:25:00.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [306] 밀리초에 완료되었습니다.
+02-May-2019 02:25:00.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+02-May-2019 02:25:00.038 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [23] 밀리초에 완료되었습니다.
+02-May-2019 02:25:00.039 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+02-May-2019 02:25:00.064 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+02-May-2019 02:25:00.070 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [913] 밀리초 내에 시작되었습니다.
+02-May-2019 02:25:00.085 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+ java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:386)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:248)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+02-May-2019 02:25:00.086 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+02-May-2019 02:25:00.087 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+02-May-2019 02:25:00.088 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+02-May-2019 02:25:00.116 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+02-May-2019 02:25:00.116 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+02-May-2019 02:25:00.116 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+02-May-2019 02:25:00.117 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:26:20.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+02-May-2019 02:26:20.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+02-May-2019 02:26:20.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+02-May-2019 02:26:20.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+02-May-2019 02:26:20.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.4
+02-May-2019 02:26:20.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+02-May-2019 02:26:20.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+02-May-2019 02:26:20.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+02-May-2019 02:26:20.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+02-May-2019 02:26:20.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:26:20.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:26:20.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2019 02:26:20.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2019 02:26:20.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:26:20.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/usr/local/cellar/tomcat/9.0.19/libexec/conf/logging.properties
+02-May-2019 02:26:20.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2019 02:26:20.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2019 02:26:20.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2019 02:26:20.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-May-2019 02:26:20.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+02-May-2019 02:26:20.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:26:20.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:26:20.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/usr/local/cellar/tomcat/9.0.19/libexec/temp
+02-May-2019 02:26:20.334 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+02-May-2019 02:26:20.395 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+02-May-2019 02:26:20.463 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+02-May-2019 02:26:20.470 INFO [main] org.apache.catalina.startup.Catalina.load [867] 밀리초 내에 서버가 초기화되었습니다.
+02-May-2019 02:26:20.544 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+02-May-2019 02:26:20.544 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+02-May-2019 02:26:20.559 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+02-May-2019 02:26:21.067 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [509] 밀리초에 완료되었습니다.
+02-May-2019 02:26:21.068 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+02-May-2019 02:26:21.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [63] 밀리초에 완료되었습니다.
+02-May-2019 02:26:21.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+02-May-2019 02:26:21.560 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [428] 밀리초에 완료되었습니다.
+02-May-2019 02:26:21.560 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+02-May-2019 02:26:21.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [28] 밀리초에 완료되었습니다.
+02-May-2019 02:26:21.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+02-May-2019 02:26:21.622 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [33] 밀리초에 완료되었습니다.
+02-May-2019 02:26:21.630 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+02-May-2019 02:26:21.657 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+02-May-2019 02:26:21.662 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,191] 밀리초 내에 시작되었습니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:33:03.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+02-May-2019 02:33:03.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+02-May-2019 02:33:03.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+02-May-2019 02:33:03.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+02-May-2019 02:33:03.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.4
+02-May-2019 02:33:03.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+02-May-2019 02:33:03.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+02-May-2019 02:33:03.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+02-May-2019 02:33:03.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+02-May-2019 02:33:03.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:03.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:03.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2019 02:33:03.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2019 02:33:03.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:33:03.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/usr/local/cellar/tomcat/9.0.19/libexec/conf/logging.properties
+02-May-2019 02:33:03.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2019 02:33:03.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2019 02:33:03.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2019 02:33:03.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-May-2019 02:33:03.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+02-May-2019 02:33:03.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:03.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:03.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/usr/local/cellar/tomcat/9.0.19/libexec/temp
+02-May-2019 02:33:03.954 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+02-May-2019 02:33:04.017 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+02-May-2019 02:33:04.082 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+02-May-2019 02:33:04.091 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[AJP/1.3-8009]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+02-May-2019 02:33:04.098 INFO [main] org.apache.catalina.startup.Catalina.load [859] 밀리초 내에 서버가 초기화되었습니다.
+02-May-2019 02:33:04.170 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+02-May-2019 02:33:04.170 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+02-May-2019 02:33:04.185 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+02-May-2019 02:33:04.655 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [470] 밀리초에 완료되었습니다.
+02-May-2019 02:33:04.656 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+02-May-2019 02:33:04.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [52] 밀리초에 완료되었습니다.
+02-May-2019 02:33:04.709 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+02-May-2019 02:33:05.117 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [409] 밀리초에 완료되었습니다.
+02-May-2019 02:33:05.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+02-May-2019 02:33:05.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [27] 밀리초에 완료되었습니다.
+02-May-2019 02:33:05.147 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+02-May-2019 02:33:05.185 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [39] 밀리초에 완료되었습니다.
+02-May-2019 02:33:05.192 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+02-May-2019 02:33:05.209 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,108] 밀리초 내에 시작되었습니다.
+02-May-2019 02:33:05.219 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+ java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:386)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:248)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+02-May-2019 02:33:05.220 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+02-May-2019 02:33:05.233 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+02-May-2019 02:33:05.233 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+02-May-2019 02:33:05.273 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+02-May-2019 02:33:05.279 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+02-May-2019 02:33:05.280 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+02-May-2019 02:33:05.280 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:33:26.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+02-May-2019 02:33:26.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+02-May-2019 02:33:26.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+02-May-2019 02:33:26.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+02-May-2019 02:33:26.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.4
+02-May-2019 02:33:26.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+02-May-2019 02:33:26.528 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+02-May-2019 02:33:26.528 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+02-May-2019 02:33:26.528 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+02-May-2019 02:33:26.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:26.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/Cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:26.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2019 02:33:26.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2019 02:33:26.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2019 02:33:26.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/usr/local/cellar/tomcat/9.0.19/libexec/conf/logging.properties
+02-May-2019 02:33:26.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2019 02:33:26.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2019 02:33:26.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2019 02:33:26.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-May-2019 02:33:26.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+02-May-2019 02:33:26.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:26.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/usr/local/cellar/tomcat/9.0.19/libexec
+02-May-2019 02:33:26.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/usr/local/cellar/tomcat/9.0.19/libexec/temp
+02-May-2019 02:33:26.534 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+02-May-2019 02:33:26.607 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+02-May-2019 02:33:26.659 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+02-May-2019 02:33:26.666 INFO [main] org.apache.catalina.startup.Catalina.load [814] 밀리초 내에 서버가 초기화되었습니다.
+02-May-2019 02:33:26.743 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+02-May-2019 02:33:26.743 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+02-May-2019 02:33:26.755 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+02-May-2019 02:33:27.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [433] 밀리초에 완료되었습니다.
+02-May-2019 02:33:27.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+02-May-2019 02:33:27.243 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [53] 밀리초에 완료되었습니다.
+02-May-2019 02:33:27.243 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+02-May-2019 02:33:27.660 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [417] 밀리초에 완료되었습니다.
+02-May-2019 02:33:27.660 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+02-May-2019 02:33:27.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+02-May-2019 02:33:27.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+02-May-2019 02:33:27.718 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [32] 밀리초에 완료되었습니다.
+02-May-2019 02:33:27.726 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+02-May-2019 02:33:27.739 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+02-May-2019 02:33:27.748 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,081] 밀리초 내에 시작되었습니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 09:50:01.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+16-Sep-2019 09:50:01.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+16-Sep-2019 09:50:01.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+16-Sep-2019 09:50:01.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+16-Sep-2019 09:50:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.6
+16-Sep-2019 09:50:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+16-Sep-2019 09:50:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+16-Sep-2019 09:50:01.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+16-Sep-2019 09:50:01.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+16-Sep-2019 09:50:01.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/Cellar/tomcat/9.0.19/libexec
+16-Sep-2019 09:50:01.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/Cellar/tomcat/9.0.19/libexec
+16-Sep-2019 09:50:01.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Sep-2019 09:50:01.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Sep-2019 09:50:01.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 09:50:01.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/usr/local/cellar/tomcat/9.0.19/libexec/conf/logging.properties
+16-Sep-2019 09:50:01.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Sep-2019 09:50:01.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+16-Sep-2019 09:50:01.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Sep-2019 09:50:01.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Sep-2019 09:50:01.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+16-Sep-2019 09:50:01.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/usr/local/cellar/tomcat/9.0.19/libexec
+16-Sep-2019 09:50:01.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/usr/local/cellar/tomcat/9.0.19/libexec
+16-Sep-2019 09:50:01.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/usr/local/cellar/tomcat/9.0.19/libexec/temp
+16-Sep-2019 09:50:01.958 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16-Sep-2019 09:50:02.008 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+16-Sep-2019 09:50:02.063 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+16-Sep-2019 09:50:02.068 INFO [main] org.apache.catalina.startup.Catalina.load [793] 밀리초 내에 서버가 초기화되었습니다.
+16-Sep-2019 09:50:02.136 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+16-Sep-2019 09:50:02.137 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+16-Sep-2019 09:50:02.148 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+16-Sep-2019 09:50:02.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [402] 밀리초에 완료되었습니다.
+16-Sep-2019 09:50:02.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+16-Sep-2019 09:50:02.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [56] 밀리초에 완료되었습니다.
+16-Sep-2019 09:50:02.608 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+16-Sep-2019 09:50:02.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [364] 밀리초에 완료되었습니다.
+16-Sep-2019 09:50:02.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+16-Sep-2019 09:50:03.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+16-Sep-2019 09:50:03.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+16-Sep-2019 09:50:03.087 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/usr/local/Cellar/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [83] 밀리초에 완료되었습니다.
+16-Sep-2019 09:50:03.097 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+16-Sep-2019 09:50:03.125 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+16-Sep-2019 09:50:03.129 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,060] 밀리초 내에 시작되었습니다.
+16-Sep-2019 10:03:03.551 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:03:03.553 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:03:03.554 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:04.056 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy 컨텍스트 []의 배치를 제거합니다.
+16-Sep-2019 10:03:04.066 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc 웹 애플리케이션 [ROOT]을(를) 위한 JDBC 드라이버의 등록을 제거하지 못했습니다.
+ java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1677)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1616)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1553)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:442)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5424)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:803)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1425)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1352)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1611)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1144)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1350)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:04.592 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy 컨텍스트 [/examples]의 배치를 제거합니다.
+16-Sep-2019 10:03:04.605 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc 웹 애플리케이션 [examples]을(를) 위한 JDBC 드라이버의 등록을 제거하지 못했습니다.
+ java.lang.IllegalStateException: java.io.IOException: java.lang.reflect.InvocationTargetException
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:101)
+	at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:256)
+	at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:281)
+	at org.apache.catalina.webresources.Cache.getResource(Cache.java:62)
+	at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:216)
+	at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:225)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1135)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1675)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1616)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1553)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:442)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5424)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:803)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1425)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1352)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1611)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1144)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1350)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.io.IOException: java.lang.reflect.InvocationTargetException
+	at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:212)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:149)
+	at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:307)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:97)
+	... 30 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:209)
+	... 33 more
+Caused by: java.nio.file.NoSuchFileException: /usr/local/Cellar/tomcat/9.0.19/libexec/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1840)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1160)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:719)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:239)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:169)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:346)
+	... 38 more
+
+16-Sep-2019 10:03:05.114 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy 컨텍스트 [/host-manager]의 배치를 제거합니다.
+16-Sep-2019 10:03:05.118 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc 웹 애플리케이션 [host-manager]을(를) 위한 JDBC 드라이버의 등록을 제거하지 못했습니다.
+ java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1677)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1616)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1553)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:442)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5424)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:803)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1425)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1352)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1611)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1144)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1350)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:05.624 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy 컨텍스트 [/manager]의 배치를 제거합니다.
+16-Sep-2019 10:03:05.629 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc 웹 애플리케이션 [manager]을(를) 위한 JDBC 드라이버의 등록을 제거하지 못했습니다.
+ java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1677)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1616)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1553)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:442)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5424)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:803)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1425)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1352)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1611)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1144)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1350)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:06.135 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy 컨텍스트 [/docs]의 배치를 제거합니다.
+16-Sep-2019 10:03:06.139 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc 웹 애플리케이션 [docs]을(를) 위한 JDBC 드라이버의 등록을 제거하지 못했습니다.
+ java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1677)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1616)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1553)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:442)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5424)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:803)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1425)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1352)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1611)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1144)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1350)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:16.150 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:03:16.152 SEVERE [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:03:16.153 WARNING [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:26.155 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:03:26.156 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:03:26.156 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:36.163 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:03:36.163 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:03:36.164 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:46.169 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:03:46.169 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:03:46.169 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:03:56.171 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:03:56.172 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:03:56.172 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:04:06.178 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:04:06.182 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:04:06.183 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:04:16.187 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:04:16.188 SEVERE [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:04:16.188 WARNING [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:04:26.193 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:04:26.196 SEVERE [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:04:26.196 WARNING [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:04:36.200 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:04:36.201 SEVERE [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:04:36.201 WARNING [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:04:46.205 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:04:46.206 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:04:46.207 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:04:56.210 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:04:56.211 SEVERE [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:04:56.211 WARNING [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:05:06.214 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:05:06.218 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:05:06.219 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:05:16.225 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:05:16.225 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:05:16.226 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:05:26.230 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:05:26.231 SEVERE [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:05:26.231 WARNING [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 10:05:31.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+16-Sep-2019 10:05:31.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+16-Sep-2019 10:05:31.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+16-Sep-2019 10:05:31.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+16-Sep-2019 10:05:31.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.6
+16-Sep-2019 10:05:31.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+16-Sep-2019 10:05:31.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+16-Sep-2019 10:05:31.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+16-Sep-2019 10:05:31.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+16-Sep-2019 10:05:31.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:31.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:31.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Sep-2019 10:05:31.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Sep-2019 10:05:31.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 10:05:31.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/conf/logging.properties
+16-Sep-2019 10:05:31.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Sep-2019 10:05:31.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+16-Sep-2019 10:05:31.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Sep-2019 10:05:31.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Sep-2019 10:05:31.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+16-Sep-2019 10:05:31.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:31.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:31.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/temp
+16-Sep-2019 10:05:31.083 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16-Sep-2019 10:05:31.155 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+16-Sep-2019 10:05:31.196 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+16-Sep-2019 10:05:31.198 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+16-Sep-2019 10:05:31.200 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[AJP/1.3-8009]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+16-Sep-2019 10:05:31.205 INFO [main] org.apache.catalina.startup.Catalina.load [846] 밀리초 내에 서버가 초기화되었습니다.
+16-Sep-2019 10:05:31.279 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+16-Sep-2019 10:05:31.280 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+16-Sep-2019 10:05:31.304 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+16-Sep-2019 10:05:31.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [614] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:31.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+16-Sep-2019 10:05:31.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [63] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:31.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+16-Sep-2019 10:05:32.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [492] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:32.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+16-Sep-2019 10:05:32.507 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:32.508 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+16-Sep-2019 10:05:32.543 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [34] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:32.550 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,344] 밀리초 내에 시작되었습니다.
+16-Sep-2019 10:05:32.555 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+ java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:386)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:248)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+16-Sep-2019 10:05:32.556 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+16-Sep-2019 10:05:32.556 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+16-Sep-2019 10:05:32.556 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+16-Sep-2019 10:05:32.592 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+16-Sep-2019 10:05:32.593 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+16-Sep-2019 10:05:32.594 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+16-Sep-2019 10:05:32.594 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+16-Sep-2019 10:05:36.234 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 변경된 소스 [file:/usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml](으)로부터 메모리 사용자 데이터베이스 [UserDatabase]을(를) 다시 로드합니다.
+16-Sep-2019 10:05:36.235 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open 지정된 사용자 데이터베이스 [conf/tomcat-users.xml]을(를) 찾을 수 없었습니다.
+16-Sep-2019 10:05:36.235 WARNING [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess [conf/tomcat-users.xml]을(를) 닫지 못했습니다.
+ java.io.FileNotFoundException: /usr/local/Cellar/tomcat/9.0.19/libexec/conf/tomcat-users.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:685)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+16-Sep-2019 10:05:40.193 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+16-Sep-2019 10:05:40.193 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+16-Sep-2019 10:05:40.203 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+16-Sep-2019 10:05:40.211 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+16-Sep-2019 10:05:40.212 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+16-Sep-2019 10:05:40.217 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+16-Sep-2019 10:05:40.220 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+16-Sep-2019 10:05:40.221 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 10:05:47.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+16-Sep-2019 10:05:47.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+16-Sep-2019 10:05:47.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+16-Sep-2019 10:05:47.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+16-Sep-2019 10:05:47.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.6
+16-Sep-2019 10:05:47.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+16-Sep-2019 10:05:47.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+16-Sep-2019 10:05:47.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+16-Sep-2019 10:05:47.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+16-Sep-2019 10:05:47.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:47.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:47.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Sep-2019 10:05:47.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Sep-2019 10:05:47.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 10:05:47.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/conf/logging.properties
+16-Sep-2019 10:05:47.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Sep-2019 10:05:47.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+16-Sep-2019 10:05:47.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Sep-2019 10:05:47.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Sep-2019 10:05:47.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+16-Sep-2019 10:05:47.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:47.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 10:05:47.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/temp
+16-Sep-2019 10:05:47.054 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16-Sep-2019 10:05:47.122 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+16-Sep-2019 10:05:47.192 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+16-Sep-2019 10:05:47.199 INFO [main] org.apache.catalina.startup.Catalina.load [850] 밀리초 내에 서버가 초기화되었습니다.
+16-Sep-2019 10:05:47.288 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+16-Sep-2019 10:05:47.289 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+16-Sep-2019 10:05:47.302 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+16-Sep-2019 10:05:47.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [489] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:47.792 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+16-Sep-2019 10:05:47.857 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [64] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:47.857 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+16-Sep-2019 10:05:48.307 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [450] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:48.308 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+16-Sep-2019 10:05:48.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [38] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:48.346 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+16-Sep-2019 10:05:48.395 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [49] 밀리초에 완료되었습니다.
+16-Sep-2019 10:05:48.401 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+16-Sep-2019 10:05:48.416 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+16-Sep-2019 10:05:48.425 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,224] 밀리초 내에 시작되었습니다.
+16-Sep-2019 11:29:46.117 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+16-Sep-2019 11:29:46.123 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+16-Sep-2019 11:29:46.131 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+16-Sep-2019 11:29:46.187 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+16-Sep-2019 11:29:46.192 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+16-Sep-2019 11:29:46.195 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+16-Sep-2019 11:29:46.196 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 21:26:12.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+16-Sep-2019 21:26:12.832 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+16-Sep-2019 21:26:12.832 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+16-Sep-2019 21:26:12.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+16-Sep-2019 21:26:12.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.6
+16-Sep-2019 21:26:12.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+16-Sep-2019 21:26:12.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+16-Sep-2019 21:26:12.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+16-Sep-2019 21:26:12.834 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+16-Sep-2019 21:26:12.834 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 21:26:12.834 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 21:26:12.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Sep-2019 21:26:12.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Sep-2019 21:26:12.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2019 21:26:12.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/conf/logging.properties
+16-Sep-2019 21:26:12.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Sep-2019 21:26:12.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+16-Sep-2019 21:26:12.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Sep-2019 21:26:12.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Sep-2019 21:26:12.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+16-Sep-2019 21:26:12.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 21:26:12.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+16-Sep-2019 21:26:12.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/temp
+16-Sep-2019 21:26:12.840 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16-Sep-2019 21:26:12.904 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+16-Sep-2019 21:26:12.976 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+16-Sep-2019 21:26:12.986 INFO [main] org.apache.catalina.startup.Catalina.load [969] 밀리초 내에 서버가 초기화되었습니다.
+16-Sep-2019 21:26:13.063 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+16-Sep-2019 21:26:13.064 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+16-Sep-2019 21:26:13.079 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+16-Sep-2019 21:26:13.527 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [448] 밀리초에 완료되었습니다.
+16-Sep-2019 21:26:13.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+16-Sep-2019 21:26:13.590 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [62] 밀리초에 완료되었습니다.
+16-Sep-2019 21:26:13.591 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+16-Sep-2019 21:26:14.031 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [439] 밀리초에 완료되었습니다.
+16-Sep-2019 21:26:14.033 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+16-Sep-2019 21:26:14.072 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [39] 밀리초에 완료되었습니다.
+16-Sep-2019 21:26:14.073 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+16-Sep-2019 21:26:14.124 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [51] 밀리초에 완료되었습니다.
+16-Sep-2019 21:26:14.132 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+16-Sep-2019 21:26:14.144 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+16-Sep-2019 21:26:14.149 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,162] 밀리초 내에 시작되었습니다.
+17-Sep-2019 01:25:59.979 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+17-Sep-2019 01:25:59.986 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+17-Sep-2019 01:25:59.994 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+17-Sep-2019 01:26:00.048 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+17-Sep-2019 01:26:00.053 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+17-Sep-2019 01:26:00.057 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+17-Sep-2019 01:26:00.058 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2019 23:15:46.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+17-Sep-2019 23:15:46.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+17-Sep-2019 23:15:46.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+17-Sep-2019 23:15:46.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+17-Sep-2019 23:15:46.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.6
+17-Sep-2019 23:15:46.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+17-Sep-2019 23:15:46.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+17-Sep-2019 23:15:46.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+17-Sep-2019 23:15:46.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+17-Sep-2019 23:15:46.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:15:46.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:15:46.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2019 23:15:46.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2019 23:15:46.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2019 23:15:46.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/conf/logging.properties
+17-Sep-2019 23:15:46.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2019 23:15:46.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2019 23:15:46.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2019 23:15:46.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Sep-2019 23:15:46.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+17-Sep-2019 23:15:46.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:15:46.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:15:46.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/temp
+17-Sep-2019 23:15:46.243 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+17-Sep-2019 23:15:46.313 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+17-Sep-2019 23:15:46.374 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+17-Sep-2019 23:15:46.380 INFO [main] org.apache.catalina.startup.Catalina.load [948] 밀리초 내에 서버가 초기화되었습니다.
+17-Sep-2019 23:15:46.456 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+17-Sep-2019 23:15:46.456 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+17-Sep-2019 23:15:46.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+17-Sep-2019 23:15:46.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [477] 밀리초에 완료되었습니다.
+17-Sep-2019 23:15:46.948 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+17-Sep-2019 23:15:47.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [67] 밀리초에 완료되었습니다.
+17-Sep-2019 23:15:47.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+17-Sep-2019 23:15:47.547 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [531] 밀리초에 완료되었습니다.
+17-Sep-2019 23:15:47.548 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+17-Sep-2019 23:15:47.583 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [34] 밀리초에 완료되었습니다.
+17-Sep-2019 23:15:47.583 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+17-Sep-2019 23:15:47.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [43] 밀리초에 완료되었습니다.
+17-Sep-2019 23:15:47.635 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+17-Sep-2019 23:15:47.648 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+17-Sep-2019 23:15:47.661 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,280] 밀리초 내에 시작되었습니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2019 23:17:32.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+17-Sep-2019 23:17:32.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+17-Sep-2019 23:17:32.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+17-Sep-2019 23:17:32.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+17-Sep-2019 23:17:32.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.6
+17-Sep-2019 23:17:32.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+17-Sep-2019 23:17:32.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+17-Sep-2019 23:17:32.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+17-Sep-2019 23:17:32.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+17-Sep-2019 23:17:32.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:17:32.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:17:32.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2019 23:17:32.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2019 23:17:32.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2019 23:17:32.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/conf/logging.properties
+17-Sep-2019 23:17:32.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2019 23:17:32.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2019 23:17:32.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2019 23:17:32.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Sep-2019 23:17:32.936 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+17-Sep-2019 23:17:32.936 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:17:32.936 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+17-Sep-2019 23:17:32.936 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/temp
+17-Sep-2019 23:17:32.937 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+17-Sep-2019 23:17:32.999 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+17-Sep-2019 23:17:33.041 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+17-Sep-2019 23:17:33.044 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+17-Sep-2019 23:17:33.046 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[AJP/1.3-8009]]을(를) 초기화하지 못했습니다.
+ org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:535)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1129)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	... 13 more
+
+17-Sep-2019 23:17:33.049 INFO [main] org.apache.catalina.startup.Catalina.load [923] 밀리초 내에 서버가 초기화되었습니다.
+17-Sep-2019 23:17:33.114 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+17-Sep-2019 23:17:33.115 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+17-Sep-2019 23:17:33.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+17-Sep-2019 23:17:33.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [478] 밀리초에 완료되었습니다.
+17-Sep-2019 23:17:33.608 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+17-Sep-2019 23:17:33.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [71] 밀리초에 완료되었습니다.
+17-Sep-2019 23:17:33.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+17-Sep-2019 23:17:34.136 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [456] 밀리초에 완료되었습니다.
+17-Sep-2019 23:17:34.137 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+17-Sep-2019 23:17:34.194 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [56] 밀리초에 완료되었습니다.
+17-Sep-2019 23:17:34.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+17-Sep-2019 23:17:34.257 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [60] 밀리초에 완료되었습니다.
+17-Sep-2019 23:17:34.272 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,222] 밀리초 내에 시작되었습니다.
+17-Sep-2019 23:17:34.285 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+ java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:386)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:248)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+17-Sep-2019 23:17:34.286 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+17-Sep-2019 23:17:34.287 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+17-Sep-2019 23:17:34.287 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+17-Sep-2019 23:17:34.329 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+17-Sep-2019 23:17:34.329 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+17-Sep-2019 23:17:34.330 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+17-Sep-2019 23:17:34.330 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+18-Sep-2019 02:41:39.342 INFO [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+18-Sep-2019 02:41:39.345 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+18-Sep-2019 02:41:39.358 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+18-Sep-2019 02:41:39.365 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+18-Sep-2019 02:41:39.422 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+18-Sep-2019 02:41:39.430 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+18-Sep-2019 02:41:39.437 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+18-Sep-2019 02:41:39.439 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Sep-2019 14:37:42.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:        Apache Tomcat/9.0.19
+18-Sep-2019 14:37:42.173 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:          Apr 12 2019 14:22:48 UTC
+18-Sep-2019 14:37:42.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:         9.0.19.0
+18-Sep-2019 14:37:42.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:               Mac OS X
+18-Sep-2019 14:37:42.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:            10.14.6
+18-Sep-2019 14:37:42.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+18-Sep-2019 14:37:42.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:             /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home
+18-Sep-2019 14:37:42.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:           12.0.1+12
+18-Sep-2019 14:37:42.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:            Oracle Corporation
+18-Sep-2019 14:37:42.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+18-Sep-2019 14:37:42.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec
+18-Sep-2019 14:37:42.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Sep-2019 14:37:42.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Sep-2019 14:37:42.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Sep-2019 14:37:42.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.config.file=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/conf/logging.properties
+18-Sep-2019 14:37:42.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Sep-2019 14:37:42.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djdk.tls.ephemeralDHKeySize=2048
+18-Sep-2019 14:37:42.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Sep-2019 14:37:42.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+18-Sep-2019 14:37:42.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dignore.endorsed.dirs=
+18-Sep-2019 14:37:42.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.base=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+18-Sep-2019 14:37:42.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Dcatalina.home=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec
+18-Sep-2019 14:37:42.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트: -Djava.io.tmpdir=/Users/chaminjae/desktop/블록체인/board_project/tomcat/9.0.19/libexec/temp
+18-Sep-2019 14:37:42.181 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/chaminjae/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+18-Sep-2019 14:37:42.249 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+18-Sep-2019 14:37:42.313 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 초기화합니다.
+18-Sep-2019 14:37:42.321 INFO [main] org.apache.catalina.startup.Catalina.load [907] 밀리초 내에 서버가 초기화되었습니다.
+18-Sep-2019 14:37:42.393 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+18-Sep-2019 14:37:42.394 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.19]
+18-Sep-2019 14:37:42.409 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]을(를) 배치합니다.
+18-Sep-2019 14:37:42.926 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/docs]에 대한 배치가 [517] 밀리초에 완료되었습니다.
+18-Sep-2019 14:37:42.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]을(를) 배치합니다.
+18-Sep-2019 14:37:43.006 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/manager]에 대한 배치가 [79] 밀리초에 완료되었습니다.
+18-Sep-2019 14:37:43.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]을(를) 배치합니다.
+18-Sep-2019 14:37:43.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/examples]에 대한 배치가 [512] 밀리초에 완료되었습니다.
+18-Sep-2019 14:37:43.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]을(를) 배치합니다.
+18-Sep-2019 14:37:43.563 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/ROOT]에 대한 배치가 [44] 밀리초에 완료되었습니다.
+18-Sep-2019 14:37:43.564 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]을(를) 배치합니다.
+18-Sep-2019 14:37:43.617 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/chaminjae/Desktop/블록체인/board_project/tomcat/9.0.19/libexec/webapps/host-manager]에 대한 배치가 [53] 밀리초에 완료되었습니다.
+18-Sep-2019 14:37:43.625 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+18-Sep-2019 14:37:43.642 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
+18-Sep-2019 14:37:43.645 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,323] 밀리초 내에 시작되었습니다.
