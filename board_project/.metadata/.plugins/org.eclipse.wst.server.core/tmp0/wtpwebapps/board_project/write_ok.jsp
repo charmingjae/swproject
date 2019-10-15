@@ -28,12 +28,18 @@
 		pstmt.close();
 		
 		conn.close();
-} catch(SQLException e) {
+		
+		
+	} catch(SQLException e) {
 	out.println( e.toString() );
 	}
+	
+	
 %>
-  <script language=javascript>
-   self.window.alert("전송 완료.");
-   location.href="product.jsp"; 
+	<script language=javascript>
+	
+	
+	self.window.alert("전송 완료.");
 
-</script>
+	location.href="product.jsp";
+	</script>

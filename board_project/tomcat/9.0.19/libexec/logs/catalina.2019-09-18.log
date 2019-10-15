@@ -48,3 +48,10 @@
 18-Sep-2019 14:37:43.625 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
 18-Sep-2019 14:37:43.642 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 시작합니다.
 18-Sep-2019 14:37:43.645 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1,323] 밀리초 내에 시작되었습니다.
+18-Sep-2019 16:09:59.402 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+18-Sep-2019 16:10:00.918 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 일시 정지 중
+18-Sep-2019 16:10:00.926 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+18-Sep-2019 16:10:00.976 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+18-Sep-2019 16:10:00.983 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 중지시킵니다.
+18-Sep-2019 16:10:00.986 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+18-Sep-2019 16:10:00.987 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["ajp-nio-8009"]을(를) 소멸시킵니다.
