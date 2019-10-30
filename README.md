@@ -7,3 +7,4 @@
 4. 4주차 - PyThon을 이용한 Block Chain 구현
 5. 5주차 - PyThon 블록체인 내 JSON형식의 TRANSACTION으로 DB 값 가져오기
 6. 7주차 - MAINPAGE 기능 추가.
+7. 8주차 - jQuery를 이용한 ROW VALUE LOAD
