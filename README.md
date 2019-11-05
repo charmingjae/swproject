@@ -8,3 +8,6 @@
 5. 5주차 - PyThon 블록체인 내 JSON형식의 TRANSACTION으로 DB 값 가져오기
 6. 7주차 - MAINPAGE 기능 추가.
 7. 8주차 - jQuery를 이용한 ROW VALUE LOAD
+8. 10주차 - JAVA로 BLOCK-CHAIN PROTOTYPE UPDATE
+
+![TESTING](https://djbooth.net/.image/t_share/MTU1ODQ4ODEwMjg5OTY0NDg4/asap-rocky-testing-album-review.jpg)
