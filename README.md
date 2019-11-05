@@ -15,12 +15,6 @@
 
 
 
-<<<<<<< HEAD
+
 - 그냥 넣어 본 이미지.
-=======
-
-
-
-- 그냥 올려 본 이미지.
->>>>>>> 7be0a68a902361f70b3b51c7f87ebb01449631a5
 ![TESTING](https://djbooth.net/.image/t_share/MTU1ODQ4ODEwMjg5OTY0NDg4/asap-rocky-testing-album-review.jpg)
