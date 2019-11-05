@@ -10,4 +10,13 @@
 7. 8주차 - jQuery를 이용한 ROW VALUE LOAD
 8. 10주차 - JAVA로 BLOCK-CHAIN PROTOTYPE UPDATE
 
+
+
+
+
+
+
+
+
+- 그냥 올려 본 이미지.
 ![TESTING](https://djbooth.net/.image/t_share/MTU1ODQ4ODEwMjg5OTY0NDg4/asap-rocky-testing-album-review.jpg)
