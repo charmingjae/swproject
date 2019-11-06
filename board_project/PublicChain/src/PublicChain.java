@@ -9,7 +9,7 @@ public class PublicChain {
 	public static void main(String[] args) {	
 		//add our blocks to the blockchain ArrayList:
 		System.out.println("\n===========================================================================================\n");
-		for(int idx = 0; idx<6; idx++) {
+		for(int idx = 0; idx<3; idx++) {
 			if(idx == 0) {
 				blockchain.add(new Block(idx, Integer.toString(idx+1)+"번째 블록", "0"));
 				System.out.println((idx+1)+"번째 블록 마이닝 중 ,,");
