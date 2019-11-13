@@ -4,4 +4,11 @@
     <fullyQualifiedTypeName name="java.security.PublicKey"/>
     <fullyQualifiedTypeName name="java.security.spec.ECGenParameterSpec"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.java.ArrayLengthNode"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="simpleChain.testTransactions"/>
+    <fullyQualifiedTypeName name="simpleChian.Block"/>
+    <fullyQualifiedTypeName name="simpleChain.StringUtil"/>
+    <fullyQualifiedTypeName name="com.google.gson.GsonBuilder"/>
 </qualifiedTypeNameHistroy>

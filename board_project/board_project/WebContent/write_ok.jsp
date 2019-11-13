@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 
     pageEncoding="EUC-KR"%>
-<%@ page import="java.sql.*"%>  
+<%@ page import="java.sql.*"%> 
+<%-- <%@ page import="simpleChain.*" %> --%>
+<%@ page import="simpleChain.PublicChain" %>
+<%@ page import="simpleChain.Block" %>
 <%
 	request.setCharacterEncoding("euc-kr");
 
@@ -13,6 +16,25 @@
 	String product_name = request.getParameter("proname");
 	String nation = request.getParameter("proloc");
 	String count = request.getParameter("pronumber");
+	
+
+	PublicChain chain = new PublicChain();
+	
+	/* out.println(chain.sender);
+	out.println(chain.recipient);
+	out.println(chain.amount); */
+	
+	chain.sender = product_name;
+	chain.recipient = nation;
+	chain.amount = count;
+	
+	chain.test();
+	
+	/* Block block = new Block(1, product_name, nation, product_name, nation, 1); */
+	
+
+
+	
 	
 	try {	
 		Connection conn = DriverManager.getConnection(url,id,pass);
@@ -33,7 +55,7 @@
 	} catch(SQLException e) {
 	out.println( e.toString() );
 	}
-	
+
 	
 %>
 	<script language=javascript>
