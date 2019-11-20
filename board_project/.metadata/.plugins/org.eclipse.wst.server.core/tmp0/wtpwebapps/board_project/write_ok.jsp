@@ -4,6 +4,7 @@
 <%@ page import="java.sql.*"%> 
 <%-- <%@ page import="simpleChain.*" %> --%>
 <%@ page import="simpleChain.PublicChain" %>
+<%@ page import="simpleChain.PublicChain.*" %>
 <%@ page import="simpleChain.Block" %>
 <%
 	request.setCharacterEncoding("euc-kr");
@@ -12,7 +13,7 @@
 	
 	String url = "jdbc:mysql://localhost:3306/pm?characterEncoding=UTF-8 & serverTimezone=UTC";
 	String id = "root";
-	String pass = "ckalswosla1";
+	String pass = "1234";
 	String product_name = request.getParameter("proname");
 	String nation = request.getParameter("proloc");
 	String count = request.getParameter("pronumber");
@@ -29,6 +30,10 @@
 	chain.amount = count;
 	
 	chain.test();
+	
+	for(Object object : chain.trans){
+		String element = (String) object;
+	}
 	
 	/* Block block = new Block(1, product_name, nation, product_name, nation, 1); */
 	

@@ -4,7 +4,6 @@
 <%@ page import="java.sql.*"%> 
 <%-- <%@ page import="simpleChain.*" %> --%>
 <%@ page import="simpleChain.PublicChain" %>
-<%@ page import="simpleChain.PublicChain.*" %>
 <%@ page import="simpleChain.Block" %>
 <%
 	request.setCharacterEncoding("euc-kr");
@@ -21,6 +20,7 @@
 
 	PublicChain chain = new PublicChain();
 	
+	
 	/* out.println(chain.sender);
 	out.println(chain.recipient);
 	out.println(chain.amount); */
@@ -30,9 +30,10 @@
 	chain.amount = count;
 	
 	chain.test();
+	int totalElements = chain.trans.size();
 	
-	for(Object object : chain.trans){
-		String element = (String) object;
+	for (int i = 0; i < totalElements; i++){
+		System.out.println(chain.trans.get(i));
 	}
 	
 	/* Block block = new Block(1, product_name, nation, product_name, nation, 1); */

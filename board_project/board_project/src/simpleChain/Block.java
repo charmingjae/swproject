@@ -9,16 +9,22 @@ import com.google.gson.Gson;
 import java.util.HashMap;
 
 
-public class Block {
+public class Block extends PublicChain {
+	private static final String String = null;
 //	transactions.add();
 	public int index;
 	public String hash;
 	public String previousHash; 
 	private String data; //our data will be a simple message.
-//	Tran transactions = new Tran();
+	
+	public String sender;
+	public String recipient;
+	public String amount;
+
 	
 	
 	public List<Tran> trans = new ArrayList<Tran>(); // Tran class 내에 있는 요소들을 list로 저장.
+	public int[] chain = null;
 	
 	private long timeStamp; //as number of milliseconds since 1/1/1970.
 	private int nonce;
@@ -30,21 +36,27 @@ public class Block {
 //	String json = gson.toJson(obj);
 	
 	
-	//Block Constructor.
+//	Block Constructor.
 	public Block(int index, String data, String previousHash, String sender, String recipient, String amount) {
+		
 		this.index = index + 1;
 		this.data = data;
-		
-		trans.add(new Tran(sender,recipient, amount));
-		
+		trans.add(new Tran(sender, recipient, amount));
 //		transactions.sender = sender;
 //		transactions.recipient = recipient;
 //		transactions.amount = amount;
 		this.previousHash = previousHash;
 		this.timeStamp = new Date().getTime();
 		this.hash = calculateHash(); //Making sure we do this after we set the other values.
-		
 	}
+
+	public int last_block() {
+		return chain.length;
+	}
+	
+	
+	
+	
 	
 //	//Block Constructor.
 //		public Block(int index, String[] cvt_newTransactions,String previousHash ) {

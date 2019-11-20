@@ -113,6 +113,31 @@ function writeCheck()
 	form.submit();
 }
 
+function addTran()
+{
+	var form = document.writeform;
+	if(!form.proname.value)
+	{
+		alert("제품 명을 선택하세요.");
+		form.name.focus();
+		return;
+	}
+	
+	if(!form.proloc.value)
+	{
+		alert("생산지를 적어주세요.");
+		form.proloc.focus();
+		return;
+	}
+	if(!form.pronumber.value)
+	{
+		alert("개수를 입력하세요.");
+		form.pronumber.focus();
+		return;
+	}
+	form.submit();
+}
+
 
 
 function addRow(){
@@ -203,6 +228,7 @@ function statusChg(){
 	   				<input type=button value="json append" id="checkJson">
 	   				<!-- input type=button value="TESTTEST" id="selectBtn"> -->
 	   				<button type="button" id="selectBtn">선택</button>
+	   				<button type="button" value="거래내역 추가" Onclick = "javascript:writeCheck();">거래내역 추가</button>
 	   			</td>
 	  		</tr>
   		<!-- <script type="text/javascript" src"./js/app.js"></script> -->
@@ -240,7 +266,7 @@ function statusChg(){
   			
   				String url = "jdbc:mysql://localhost:3306/pm?characterEncoding=UTF-8 & serverTimezone=UTC";
   				String id = "root";
-  				String pass = "ckalswosla1";
+  				String pass = "1234";
   				int total = 0;
   				
   				try{
