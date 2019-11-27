@@ -1,3 +1,7 @@
+<%@page import="java.util.HashMap"%>
+<%@page import="java.util.Map"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 
     pageEncoding="EUC-KR"%>
@@ -16,9 +20,14 @@
 	String product_name = request.getParameter("proname");
 	String nation = request.getParameter("proloc");
 	String count = request.getParameter("pronumber");
-	
+/* 	Map<String,String> map2 = new HashMap<String, String>();////// 11/26 append
+	List<Map<String, String>> list = new ArrayList<Map<String, String>>(); */
 
+	
+	Map<String,String> map2 = new HashMap<String, String>();////// 11/26 append
+	List<Map<String, String>> list = new ArrayList<Map<String, String>>();
 	PublicChain chain = new PublicChain();
+	
 	
 	
 	/* out.println(chain.sender);
@@ -29,7 +38,7 @@
 	chain.recipient = nation;
 	chain.amount = count;
 	
-	chain.test();
+	chain.newTran(chain.sender, chain.recipient, chain.amount);
 	int totalElements = chain.trans.size();
 	
 	for (int i = 0; i < totalElements; i++){

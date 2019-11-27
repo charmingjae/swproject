@@ -176,7 +176,7 @@ function statusChg(){
 			 <center>
 			 
 			 
-				 <form name=writeform method=post action="write_ok.jsp">
+				 <form name=writeform method=post action="addTran.jsp">
 				 			<br /><br /><br /><br /><br /><br /><br /><br /><br />
 				 	<table border = 0 width="15%" cellpadding="0" cellspacing="0" style="margin:auto; text-align:center">
 				 		<tr>
@@ -228,7 +228,7 @@ function statusChg(){
 	   				<input type=button value="json append" id="checkJson">
 	   				<!-- input type=button value="TESTTEST" id="selectBtn"> -->
 	   				<button type="button" id="selectBtn">선택</button>
-	   				<button type="button" value="거래내역 추가" Onclick = "javascript:writeCheck();">거래내역 추가</button>
+	   				<button type="button" value="거래내역 추가" Onclick = "javascript:addTran();">거래내역 추가</button>
 	   			</td>
 	  		</tr>
   		<!-- <script type="text/javascript" src"./js/app.js"></script> -->

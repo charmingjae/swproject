@@ -3,10 +3,13 @@ package simpleChain;
 import java.util.List;
 
 public class Tran {
-	public String sender;
-	public String recipient;
-	public String amount;
-	public List<Tran> trans;
+	public static String sender;
+	public static String recipient;
+	public static String amount;
+	public static List<Tran> trans;
+	
+	
+
 	
 	public Tran(String sender, String recipient, String amount) {
 		this.sender = sender;

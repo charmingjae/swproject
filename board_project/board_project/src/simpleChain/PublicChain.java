@@ -1,17 +1,22 @@
 package simpleChain;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.google.gson.*;
 import com.google.gson.GsonBuilder;
-import simpleChain.Tran;
+import simpleChain.Tran.*;
+import simpleChain.*;
 import simpleChain.Block;
 
 public class PublicChain {
 	public static ArrayList<Block> blockchain = new ArrayList<Block>();
+	
+	public List<Tran> trans = new ArrayList<Tran>(); // Tran class 내에 있는 요소들을 list로 저장.
 	
 	
 	
@@ -21,9 +26,35 @@ public class PublicChain {
 	public String recipient;
 	public String amount;
 	
-
-	public Block newTran = new Block();
+	public String sender2;
+	public String recipient2;
+	public String amount2;
 	
+	Tran tranTest = new Tran(sender, recipient, amount);
+	
+	HashMap<String,String> map = new HashMap<>();////// 11/26 append
+	
+	
+//	Map<String,Tran> map2 = new HashMap<String, Tran>();////// 11/26 append
+//	List<Map<String, Tran>> list = new ArrayList<Map<String, Tran>>();
+	
+//	Map<Tran,String> map2 = new HashMap<Tran, String>();////// 11/26 append
+//	List<Map<Tran, String>> list = new ArrayList<Map<Tran, String>>();
+	
+	
+//	Map<String,String> map2 = new HashMap<String, String>();////// 11/26 append
+	
+	///////////////////////// USE //////////////////////////
+//	List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+	
+	
+	
+	
+
+	
+	
+//	public List<HashMap<String,String>> transTest = new ArrayList<>(); // Tran class 내에 있는 요소들을 list로 저장.
+	public int[] chain = null;
 	///
 	
 //	public String sender2="";
@@ -35,6 +66,85 @@ public class PublicChain {
 	public int index = 0;
 	
 	
+	Map<String,String> map2;
+//	Map<String,String> map2 = new HashMap<String, String>();////// 11/26 append
+//	List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+	List<Map<String,String>> list = new ArrayList<Map<String, String>>();
+	
+
+	public List<Map<String, String>> newTran(String sender, String recipient, String amount) {
+		map2 = new HashMap<String, String>();////// 11/26 append
+		
+		
+		tranTest.setSender(sender);
+		tranTest.setRecipient(recipient);
+		tranTest.setAmount(amount);
+
+		
+		map2.put("sender", tranTest.getSender());
+		map2.put("recipient", tranTest.getRecipient());
+		map2.put("amount", tranTest.getAmount());
+
+		
+		list.add(map2);
+		
+		map2 = new HashMap<String, String>();////// 11/26 append
+		
+		
+		tranTest.setSender(sender);
+		tranTest.setRecipient(recipient);
+		tranTest.setAmount(amount);
+
+		
+		map2.put("sender", tranTest.getSender());
+		map2.put("recipient", tranTest.getRecipient());
+		map2.put("amount", tranTest.getAmount());
+
+		
+		list.add(map2);
+
+		
+		System.out.println(list);
+		return new ArrayList<Map<String, String>>();
+	}
+	
+//	public void newTran(String sender, String recipient, String amount) {
+//		map2 = new HashMap<String, String>();////// 11/26 append
+//		
+//		
+//		tranTest.setSender(sender);
+//		tranTest.setRecipient(recipient);
+//		tranTest.setAmount(amount);
+//
+//		
+//		map2.put("sender", tranTest.getSender());
+//		map2.put("recipient", tranTest.getRecipient());
+//		map2.put("amount", tranTest.getAmount());
+//
+//		
+//		list.add(map2);
+//		
+//		map2 = new HashMap<String, String>();////// 11/26 append
+//		
+//		
+//		tranTest.setSender(sender);
+//		tranTest.setRecipient(recipient);
+//		tranTest.setAmount(amount);
+//
+//		
+//		map2.put("sender", tranTest.getSender());
+//		map2.put("recipient", tranTest.getRecipient());
+//		map2.put("amount", tranTest.getAmount());
+//
+//		
+//		list.add(map2);
+//
+//		
+//		System.out.println(list);
+//		
+//	}
+	
+
 	
 	public void test() {
 		//add our blocks to the blockchain ArrayList:
@@ -72,11 +182,6 @@ public class PublicChain {
 				System.out.println("\n===========================================================================================");
 				
 	}
-	
-	public void newTran() {
-		blockchain.new_transactions(sender,recipient,amount);
-	}
-	
 	
 	
 	
