@@ -12,7 +12,12 @@
 9. 11주차 - TRANSACTIONS IMPORT
 10. 12주차 - BLOCK VALIDATION FIX
 11. 13주차 - EVENT FIX ( ~ING)
+12. 14주차 - DOCUMENTATION
 
+
+
+12/03
+완전 실패한 프로젝트.
 
 
 
