@@ -176,7 +176,7 @@ function statusChg(){
 			 <center>
 			 
 			 
-				 <form name=writeform method=post action="addTran.jsp">
+				 <form name=writeform method=post action="write_ok.jsp">
 				 			<br /><br /><br /><br /><br /><br /><br /><br /><br />
 				 	<table border = 0 width="15%" cellpadding="0" cellspacing="0" style="margin:auto; text-align:center">
 				 		<tr>

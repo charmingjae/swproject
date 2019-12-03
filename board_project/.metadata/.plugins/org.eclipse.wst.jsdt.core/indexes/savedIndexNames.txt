@@ -6,4 +6,3 @@ INDEX VERSION 1.4+/Users/chaminjae/Desktop/swproject/board_project/.metadata/.pl
 4240972905.index
 1687047090.index
 1067154389.index
-1067154389.index

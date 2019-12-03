@@ -12,9 +12,9 @@ public class Tran {
 
 	
 	public Tran(String sender, String recipient, String amount) {
-		this.sender = sender;
-		this.recipient = recipient;
-		this.amount = amount;
+		Tran.sender = sender;
+		Tran.recipient = recipient;
+		Tran.amount = amount;
 	}
 	
 	public String getSender() {
@@ -22,7 +22,7 @@ public class Tran {
 	}
 
 	public void setSender(String sender) {
-		this.sender = sender;
+		Tran.sender = sender;
 	}
 
 	public String getRecipient() {
@@ -30,7 +30,7 @@ public class Tran {
 	}
 
 	public void setRecipient(String recipient) {
-		this.recipient = recipient;
+		Tran.recipient = recipient;
 	}
 
 	public String getAmount() {
@@ -38,7 +38,7 @@ public class Tran {
 	}
 
 	public void setAmount(String amount) {
-		this.amount = amount;
+		Tran.amount = amount;
 	}
 
 	public List<Tran> getTrans() {
@@ -46,6 +46,6 @@ public class Tran {
 	}
 
 	public void setTrans(List<Tran> trans) {
-		this.trans = trans;
+		Tran.trans = trans;
 	}
 }

@@ -30,10 +30,7 @@
 	chain.amount = count;
 	
 	chain.test();
-	
-	for(Object object : chain.trans){
-		String element = (String) object;
-	}
+
 	
 	/* Block block = new Block(1, product_name, nation, product_name, nation, 1); */
 	

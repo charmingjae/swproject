@@ -22,9 +22,9 @@ public class PublicChain {
 	
 	public static int difficulty = 5;
 	
-	public String sender;
-	public String recipient;
-	public String amount;
+	public String sender = "";
+	public String recipient = "";
+	public String amount = "";
 	
 	public String sender2;
 	public String recipient2;
@@ -72,43 +72,7 @@ public class PublicChain {
 	List<Map<String,String>> list = new ArrayList<Map<String, String>>();
 	
 
-	public List<Map<String, String>> newTran(String sender, String recipient, String amount) {
-		map2 = new HashMap<String, String>();////// 11/26 append
-		
-		
-		tranTest.setSender(sender);
-		tranTest.setRecipient(recipient);
-		tranTest.setAmount(amount);
-
-		
-		map2.put("sender", tranTest.getSender());
-		map2.put("recipient", tranTest.getRecipient());
-		map2.put("amount", tranTest.getAmount());
-
-		
-		list.add(map2);
-		
-		map2 = new HashMap<String, String>();////// 11/26 append
-		
-		
-		tranTest.setSender(sender);
-		tranTest.setRecipient(recipient);
-		tranTest.setAmount(amount);
-
-		
-		map2.put("sender", tranTest.getSender());
-		map2.put("recipient", tranTest.getRecipient());
-		map2.put("amount", tranTest.getAmount());
-
-		
-		list.add(map2);
-
-		
-		System.out.println(list);
-		return new ArrayList<Map<String, String>>();
-	}
-	
-//	public void newTran(String sender, String recipient, String amount) {
+//	public List<Map<String, String>> newTran(String sender, String recipient, String amount) {
 //		map2 = new HashMap<String, String>();////// 11/26 append
 //		
 //		
@@ -141,8 +105,17 @@ public class PublicChain {
 //
 //		
 //		System.out.println(list);
-//		
+//		return new ArrayList<Map<String, String>>();
 //	}
+	
+	public void newTran(String sender, String recipient, String amount) {
+		
+		
+		this.sender = sender;
+		this.recipient = recipient;
+		this.amount = amount;
+		
+	}
 	
 
 	
@@ -154,14 +127,14 @@ public class PublicChain {
 				
 				while(true) {
 					if(blockchain.size() == 0) {
-						blockchain.add(new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", "0", sender, recipient, amount));
+						blockchain.add(new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", "0", this.sender, this.recipient, this.amount));
 						System.out.println((blockchain.size())+"번째 블록 마이닝 중 ,,");
 						blockchain.get(blockchain.size()-1).mineBlock(difficulty);
 						index++;
 						break;
 					}
 					else {
-						blockchain.add(blockchain.size(), new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", blockchain.get(blockchain.size()-1).hash, sender, recipient, amount));
+						blockchain.add(blockchain.size(), new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", blockchain.get(blockchain.size()-1).hash, this.sender, this.recipient, this.amount));
 						System.out.println((blockchain.size())+"번째 블록 마이닝 중 ,,");
 						blockchain.get(blockchain.size()-1).mineBlock(difficulty);
 						index++;
