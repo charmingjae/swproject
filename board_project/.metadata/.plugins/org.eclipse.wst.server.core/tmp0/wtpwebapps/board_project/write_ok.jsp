@@ -18,6 +18,10 @@
 	String nation = request.getParameter("proloc");
 	String count = request.getParameter("pronumber");
 	
+	
+	System.out.println("product_name = " + product_name);
+	System.out.println("nation = " + nation);
+	System.out.println("count = " + count);
 
 	PublicChain chain = new PublicChain();
 	
@@ -28,6 +32,12 @@
 	chain.sender = product_name;
 	chain.recipient = nation;
 	chain.amount = count;
+	
+	
+	System.out.println("chain product_name = " + chain.sender);
+	System.out.println("chain nation = " + chain.recipient);
+	System.out.println("chain count = " + chain.amount);
+	
 	
 	chain.test();
 

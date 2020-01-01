@@ -11,10 +11,15 @@ public class Tran {
 	
 
 	
+//	public Tran(String sender, String recipient, String amount) {
+//		Tran.sender = sender;
+//		Tran.recipient = recipient;
+//		Tran.amount = amount;
+//	}
 	public Tran(String sender, String recipient, String amount) {
-		Tran.sender = sender;
-		Tran.recipient = recipient;
-		Tran.amount = amount;
+		this.sender = sender;
+		this.recipient = recipient;
+		this.amount = amount;
 	}
 	
 	public String getSender() {
