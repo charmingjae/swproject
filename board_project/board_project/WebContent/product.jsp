@@ -5,8 +5,8 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.ArrayList"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page import="simpleChain.*" %>
 <%@ page import="simpleChain.PublicChain" %>
+<%@ page import="simpleChain.PublicChain.*" %>
 <%@ page import="simpleChain.Block" %>
 
 <style type="text/css"> /* css */
@@ -140,6 +140,12 @@ function addTran()
 
 
 
+function generateBlock(){ //최초 블록 생성 함수
+	location.href="./generateBlock.jsp";
+}
+
+
+
 function addRow(){
 	 
 	   mytable = document.getElementById("table1");  //행을 추가할 테이블
@@ -223,12 +229,13 @@ function statusChg(){
 		
 	  		<tr>
 	   			<td>
-	   				<input type=button value="등록" OnClick = "javascript:writeCheck();">
-	   				<input type=button value="수정" OnClick = "javascript:statusChg();">
-	   				<input type=button value="json append" id="checkJson">
+	   				<input type=button value="등록" OnClick ="generateBlock();">
+	   				<!-- <input type=button value="수정" OnClick = "javascript:statusChg();"> -->
+	   				<!-- <input type=button value="json append" id="checkJson"> -->
 	   				<!-- input type=button value="TESTTEST" id="selectBtn"> -->
-	   				<button type="button" id="selectBtn">선택</button>
-	   				<button type="button" value="거래내역 추가" Onclick = "javascript:addTran();">거래내역 추가</button>
+	   				<!-- <button type="button" id="selectBtn">선택</button> -->
+	   				<input type="button" value="거래내역 추가" Onclick = "javascript:writeCheck();">
+	   				<!-- <button type="button" value="최초 블록 생성" Onclick = "javascript:generateBlock();"> 최초 블록 생성 </button> -->
 	   			</td>
 	  		</tr>
   		<!-- <script type="text/javascript" src"./js/app.js"></script> -->
@@ -389,6 +396,8 @@ function statusChg(){
 						<%
 							}
 						%>
+						
+						
 					</td>
 				</tr>
 			</table>

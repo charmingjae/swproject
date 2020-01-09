@@ -37,55 +37,79 @@ public class Block {
 	
 //	public List<Tran> trans = new ArrayList<Tran>(); // Tran class 내에 있는 요소들을 list로 저장.
 	
-	public List transSender = new ArrayList<Object>();
+	public List<Object> transSender = new ArrayList<Object>();
 	
 	Map<String, String> mapTrans = new HashMap<>();
 	
 	
+	// 01. 09 BACKUP.!!!!!!!!!!!!!!!
+	
+	
 //	Block Constructor.
-	public Block(int index, String data, String previousHash, String sender, String recipient, String amount) {
+//	public Block(int index, String data, String previousHash, String sender, String recipient, String amount) {
+//		this.index = index + 1;
+//		this.data = data;
+//		
+//		mapTrans.put("sender",sender);
+//		mapTrans.put("recipient",recipient);
+//		mapTrans.put("amount",amount);
+//		
+//		
+//		
+////		trans.add(new Tran(sender, recipient, amount));
+//		
+//		transSender.add(mapTrans); //// 12/30 MAP을 리스트에 추가하는 작업 수행
+//		
+//		
+//		mapTrans = new HashMap<>();
+//		mapTrans.put("sender","halo");
+//		mapTrans.put("recipient","sap");
+//		mapTrans.put("amount","55");
+//		
+//		transSender.add(mapTrans);
+//		
+//		
+//		this.sender = sender;
+//		this.recipient = recipient;
+//		this.amount = amount;
+//		
+//		Iterator iterator = transSender.iterator();
+//		
+//		while(iterator.hasNext()) {
+////			this.mapTrans = (Map<String, String>)transSender.get(0);
+//			this.mapTrans = (Map<String, String>)iterator.next();
+//			
+//		}
+//		
+//		
+//		this.previousHash = previousHash;
+//		this.timeStamp = new Date().getTime();
+//		this.hash = calculateHash(); //Making sure we do this after we set the other values.
+//	}
+
+	
+	
+	
+	public Block(int index, String data, String previousHash, List<Object> transactions, Map<String, String> mapTrans) {
 		this.index = index + 1;
 		this.data = data;
 		
-		mapTrans.put("sender",sender);
-		mapTrans.put("recipient",recipient);
-		mapTrans.put("amount",amount);
-		
-		
-		
-//		trans.add(new Tran(sender, recipient, amount));
-		
-		transSender.add(mapTrans); //// 12/30 MAP을 리스트에 추가하는 작업 수행
-		
-		
-		mapTrans = new HashMap<>();
-		mapTrans.put("sender","halo");
-		mapTrans.put("recipient","sap");
-		mapTrans.put("amount","55");
-		
-		transSender.add(mapTrans);
 		
 		
 		this.sender = sender;
 		this.recipient = recipient;
 		this.amount = amount;
 		
-		Iterator iterator = transSender.iterator();
+//		Iterator iterator = transSender.iterator();
+		this.transSender = transactions;
+		this.mapTrans = mapTrans;
 		
-		while(iterator.hasNext()) {
-//			this.mapTrans = (Map<String, String>)transSender.get(0);
-			this.mapTrans = (Map<String, String>)iterator.next();
-			
-		}
 		
 		
 		this.previousHash = previousHash;
 		this.timeStamp = new Date().getTime();
 		this.hash = calculateHash(); //Making sure we do this after we set the other values.
 	}
-
-	// 01/01수요일 map을 list에 추가시키는 과정 수행 .
-	
 	
 	//Calculate new hash based on blocks contents
 	public String calculateHash() {

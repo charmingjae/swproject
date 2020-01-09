@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<style type="text/css">
+	@import url("login.css");
+</style> 
+</head>
+<body>
+
+<%-- <jsp:include page="navbar.jsp"></jsp:include> --%>
+
+<!-- <div class="testbox">
+  <h1>LOG IN.</h1>
+
+  <form action="loginChk.jsp">
+      <hr>
+		  <label id="icon" for="stu_no"><i class="icon-user "></i></label>
+		  <input type="number" name="stu_no" id="stu_no" placeholder="학번" required/>
+
+		  <label id="icon" for="stu_pw"><i class="icon-shield"></i></label>
+		  <input type="password" name="stu_pw" id="stu_pw" placeholder="비밀번호" required/>
+		  
+		  <br><br>
+
+
+   		<p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+   		<button type="submit" class="buttonset">로그인</button>
+  </form>
+</div> -->
+
+      <form action="loginChk.jsp" class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+          <input type="number" name="stu_no" id="stu_no" placeholder="학번" required/>
+          <!-- <span data-placeholder="학번"></span> -->
+        </div>
+
+        <div class="txtb">
+          <input type="password" name="stu_pw" id="stu_pw" placeholder="비밀번호" required/>
+          <!-- <span data-placeholder="Password"></span> -->
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+        <div class="bottom-text">
+          Don't have account? <a href="#">Sign up</a>
+        </div>
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="cat.js" ></script>
+<style type="text/css">
+	@import url("cat.css");
+</style> 
+</head>
+<body>
+		<div id="world"/>
+
+		<div id="credits">
+		  <p><a href="http://babeltheking.com" target="blank">Babel the king</a> | <a href="https://codepen.io/Yakudoo/"  target="blank">my other codepens</a>  | <a href="https://www.epic.net" target="blank">epic.net</a></p>
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<style type="text/css">
+	@import url("login.css");
+</style> 
+</head>
+<body>
+
+
+<div class="testbox">
+  <h1>STATUS</h1>
+
+  <form action="loginChk.jsp">
+      <hr>
+		  <div class="grade">
+	      <input type="radio" value="1" id="radioOne" name="stu_grade" checked/>
+	      <label for="radioOne" class="radio" chec>판매중</label>
+	      <input type="radio" value="2" id="radioTwo" name="stu_grade" />
+	      <label for="radioTwo" class="radio">거래중</label>
+	      <input type="radio" value="3" id="radioThree" name="stu_grade" />
+	      <label for="radioThree" class="radio">판매완료</label>
+	    </div>
+		  <br><br>
+
+
+<!--    		<p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p> -->
+   		<button type="submit" class="buttonset">로그인</button>
+  </form>
+</div>
+
+
+</body>
+</html>

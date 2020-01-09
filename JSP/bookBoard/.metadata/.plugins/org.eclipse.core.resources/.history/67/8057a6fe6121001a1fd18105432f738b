@@ -1,0 +1,247 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+<style type="text/css">
+	@import "compass/css3";
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+$background: #e74c3c;
+$file-upload-color: #c0392b;
+$file-upload-size: 300px;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, Arial; 
+    @include box-sizing(border-box);
+}
+body { 
+    color: #fff;
+    padding: 55px 25px;
+    background-color: $background;
+}
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    span { 
+        font-size: 13px;
+        display: block;
+        padding-left: 4px;
+    }
+}
+p {
+  margin-top: 200px;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: darken($file-upload-color, 2);
+    @include transition(all 0.2s ease-in);
+    &:hover {
+      background-color: darken($file-upload-color, 5);
+    }
+  }
+}
+.custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+.custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    margin-top: 30px;
+    //border: 1px solid #ccc;
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.file-upload-wrapper {
+    position: relative; 
+    margin-bottom: 5px;
+    //border: 1px solid #ccc;
+}
+.file-upload-input {
+    width: $file-upload-size;
+    color: #fff;
+    font-size: 16px;
+    padding: 11px 17px; 
+    border: none;
+    background-color: $file-upload-color; 
+    @include transition(all 0.2s ease-in); 
+    float: left; /* IE 9 Fix */
+    &:hover, &:focus { 
+        background-color: darken($file-upload-color, 5);
+        outline: none; 
+    }
+}
+.file-upload-button {
+    cursor: pointer; 
+    display: inline-block; 
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 11px 20px; 
+    border: none;
+    margin-left: -1px;  
+    background-color: darken($file-upload-color, 10); 
+    float: left; /* IE 9 Fix */
+    @include transition(all 0.2s ease-in);
+    &:hover {
+        background-color: darken($file-upload-color, 20);
+    }
+}
+</style>
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="../writeChk.jsp">
+				<span class="contact100-form-title">
+					BOOK SUBMIT
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="책 이름을 입력하세요.">
+					<span class="label-input100">책 이름</span>
+					<input class="input100" type="text" name="bookname" placeholder="책 이름을 입력하세요.">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "출판사를 입력하세요.">
+					<span class="label-input100">출판사</span>
+					<input class="input100" type="text" name="publisher" placeholder="출판사를 입력하세요.">
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input" data-validate = "교수명을 입력하세요.">
+					<span class="label-input100">교수명</span>
+					<input class="input100" type="text" name="prof" placeholder="교수명을 입력하세요.">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">책 상태</span>
+					<div>
+						<select class="selection-2" name="status">
+							<option>상</option>
+							<option>중</option>
+							<option>하</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- <div class="wrap-input100 input100-select">
+					<span class="label-input100">가격</span>
+					<div>
+						<select class="selection-2" name="budget">
+							<option>구두 협의</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div> -->
+
+				<div class="wrap-input100 validate-input" data-validate = "상세정보를 입력하세요.">
+					<span class="label-input100">상세정보</span>
+					<textarea class="input100" name="summary" placeholder="상세정보를 입력해주세요..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="custom-file-upload">
+				    <!--<label for="file">File: </label>--> 
+				    <input type="file" id="file" name="myfiles[]" multiple />
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" type="submit">
+							<span>
+								등록하기
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
