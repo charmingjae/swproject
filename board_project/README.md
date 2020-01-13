@@ -1,18 +1,21 @@
 2학년 2학기 SW-PROJECT
 ====================
+> 01.13.월요일 완성
 
-1. 1주차 - 주제 선정
-2. 2주차 - 사용자 요구 분석
-3. 3주차 - JSP WEB FILE, MYSQL DB 연동
-4. 4주차 - PyThon을 이용한 Block Chain 구현
-5. 5주차 - PyThon 블록체인 내 JSON형식의 TRANSACTION으로 DB 값 가져오기
-6. 7주차 - MAINPAGE 기능 추가.
-7. 8주차 - jQuery를 이용한 ROW VALUE LOAD
-8. 10주차 - JAVA로 BLOCK-CHAIN PROTOTYPE UPDATE
-9. 11주차 - TRANSACTIONS IMPORT
-10. 12주차 - BLOCK VALIDATION FIX
-11. 13주차 - EVENT FIX ( ~ING)
-12. 14주차 - DOCUMENTATION
+## 주차 별 진행상황
+
+- 1주차 - 주제 선정
+- 2주차 - 사용자 요구 분석
+- 3주차 - JSP WEB FILE, MYSQL DB 연동
+- 4주차 - PyThon을 이용한 Block Chain 구현
+- 5주차 - PyThon 블록체인 내 JSON형식의 Transaciton으로 DB 값 가져오기
+- 7주차 - MainPage 기능 추가.
+- 8주차 - jQuery를 이용한 값 추출 구현
+- 10주차 - Blockchain Prototype for JAVA
+- 11주차 - Import Transactions
+- 12주차 - Fix Block Validation
+- 13주차 - Event fix
+- 14주차 - Documentation
 
 
 
