@@ -9,19 +9,6 @@ public class Tran {
 	public static List<Tran> trans;
 	
 	
-
-	
-//	public Tran(String sender, String recipient, String amount) {
-//		Tran.sender = sender;
-//		Tran.recipient = recipient;
-//		Tran.amount = amount;
-//	}
-	public Tran(String sender, String recipient, String amount) {
-		this.sender = sender;
-		this.recipient = recipient;
-		this.amount = amount;
-	}
-	
 	public String getSender() {
 		return sender;
 	}

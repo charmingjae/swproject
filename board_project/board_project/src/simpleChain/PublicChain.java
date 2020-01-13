@@ -1,16 +1,10 @@
 package simpleChain;
 
-import java.io.PrintStream;
 import java.util.ArrayList;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import com.google.gson.*;
 import com.google.gson.GsonBuilder;
-import simpleChain.Tran.*;
-import simpleChain.*;
 import simpleChain.Block;
 
 public class PublicChain {
@@ -27,18 +21,12 @@ public class PublicChain {
 	public String recipient;
 	public String amount;
 	
-//	public static List<Object> transSender = new ArrayList<Object>(); // 갖고갈 array
 	public static List<Object> transSender = new ArrayList<>(); // 갖고갈 array
+//	public static List<Object> transSender; // 갖고갈 array
 	
 	public static Map<String, String> mapTrans; // array에 요소를 넣기 위한 Map.
 
 	public int index = 0;
-	
-
-	
-///////// 01.09 BACKUP
-	
-//	public void test() {
 //		//add our blocks to the blockchain ArrayList:
 //				System.out.println("\n===========================================================================================\n");
 //				System.out.println(blockchain.size());
@@ -83,12 +71,12 @@ public class PublicChain {
 		//add our blocks to the blockchain ArrayList:
 				System.out.println("\n===========================================================================================\n");
 				System.out.println("블록체인 사이즈 : " + blockchain.size());
-//				block = new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", "0", transSender, mapTrans);
-//				block = new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", blockchain.get(blockchain.size()-1).hash, transSender, mapTrans);
-				
+
 				while(true) {
 					if(blockchain.size() == 0) {
+						
 						blockchain.add(new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", "0", transSender, mapTrans));
+						transSender = new ArrayList<>();
 						System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!Blockchain = " + blockchain.get(0));
 						System.out.println((blockchain.size())+"번째 블록 마이닝 중 ,,");
 						blockchain.get(blockchain.size()-1).mineBlock(difficulty);
@@ -97,14 +85,13 @@ public class PublicChain {
 					}
 					else {
 						blockchain.add(new Block(blockchain.size(), Integer.toString(blockchain.size()+1)+"번째 블록", blockchain.get(blockchain.size()-1).hash, transSender, mapTrans));
-//						System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!Blockchain = " + blockchain.get(blockchain.size()));
+						transSender = new ArrayList<>();
 						System.out.println((blockchain.size())+"번째 블록 마이닝 중 ,,");
 						blockchain.get(blockchain.size()-1).mineBlock(difficulty);
 						index++;
 						break;
 					}
 				}
-				
 				
 				System.out.println("\nBlockchain is Valid: " + isChainValid());
 				
@@ -120,7 +107,9 @@ public class PublicChain {
 	
 	
 	public List<Object> addObject(String sender, String recipient, String amount) {
-		mapTrans = new HashMap<>(); // 진짜 큰 한 수. https://its21c.net/248 을 참고하여 작성. 이 게시글 100번도 넘게 본 것 같은데 이제 이해함.
+		
+		mapTrans = new HashMap<>(); // 진짜 대박 . https://its21c.net/248 을 참고하여 작성. 이 게시글 100번도 넘게 본 것 같은데 이제 이해함.
+		
 		System.out.println("BEFORE TRANSSENDER : \n");
 		for(int i = 0 ; i < transSender.size(); i++)
 		{
@@ -145,11 +134,7 @@ public class PublicChain {
 		return transSender;
 		
 	}
-	
-	
-	
 
-	
 	public static Boolean isChainValid() {
 		Block currentBlock; 
 		Block previousBlock;
