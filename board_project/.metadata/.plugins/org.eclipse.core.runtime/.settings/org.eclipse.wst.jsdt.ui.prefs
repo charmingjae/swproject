@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+editor_folding_default_javadoc=true
+editor_folding_default_methods=true
 fontPropagated=true
 org.eclipse.jface.textfont=1|Menlo|12.0|0|COCOA|1|;
 org.eclipse.wst.jsdt.internal.ui.navigator.layout=1
