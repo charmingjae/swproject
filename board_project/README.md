@@ -39,8 +39,5 @@
 
 - 고질적인 문제였던 Block 내의 List 초기화 현상 수정
 - Block마다 같은 List(Transaction)이 추가, 교체되던 현상 수정
-- 프로젝트 완성
+- ** 프로젝트 완성**
 
-
-~~그냥 넣어 본 이미지.~~
-![TESTING](https://djbooth.net/.image/t_share/MTU1ODQ4ODEwMjg5OTY0NDg4/asap-rocky-testing-album-review.jpg)
