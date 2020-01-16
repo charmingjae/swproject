@@ -27,21 +27,21 @@
 
 	PublicChain chain = new PublicChain();
 	
-	/* out.println(chain.sender);
-	out.println(chain.recipient);
+	/* out.println(chain.product);
+	out.println(chain.nation);
 	out.println(chain.amount); */
 	
-	chain.sender = product_name;
-	chain.recipient = nation;
+	chain.product = product_name;
+	chain.nation = nation;
 	chain.amount = count;
 	
 	
-	System.out.println("chain product_name = " + chain.sender);
-	System.out.println("chain nation = " + chain.recipient);
+	System.out.println("chain product_name = " + chain.product);
+	System.out.println("chain nation = " + chain.nation);
 	System.out.println("chain count = " + chain.amount);
 	
 	
-	chain.addObject(chain.sender, chain.recipient, chain.amount);
+	chain.addObject(chain.product, chain.nation, chain.amount);
 
 	
 	/* Block block = new Block(1, product_name, nation, product_name, nation, 1); */

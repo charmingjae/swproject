@@ -52,8 +52,8 @@
              
           var blockInfo = new Object();
            
-          blockInfo.sender = form.proname.value;
-          blockInfo.recipient = form.proloc.value;
+          blockInfo.product = form.proname.value;
+          blockInfo.nation = form.proloc.value;
           blockInfo.amount = form.pronumber.value;
              
           blockChain.push(blockInfo);
@@ -65,7 +65,7 @@
           totalInfo/* .transactions */ = blockChain;
            
           var jsonInfo = JSON.stringify(totalInfo);
-          console.log(jsonInfo); //브라우저 f12개발자 모드에서 confole로 확인 가능
+          console.log(jsonInfo); //브라우저 f12개발자 모드에서 console로 확인 가능
           alert(jsonInfo);
           
           $.ajax({
@@ -465,8 +465,8 @@ function statusChg(){
 				var status = td.eq(6).text();
 				
 				
-				/* Block.sender = proname;
-				Block.recipient = nation;
+				/* Block.product = proname;
+				Block.nation = nation;
 				Block.amount = count; */
 				
 				

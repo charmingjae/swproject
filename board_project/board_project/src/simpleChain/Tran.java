@@ -3,26 +3,26 @@ package simpleChain;
 import java.util.List;
 
 public class Tran {
-	public static String sender;
-	public static String recipient;
+	public static String product;
+	public static String nation;
 	public static String amount;
 	public static List<Tran> trans;
 	
 	
-	public String getSender() {
-		return sender;
+	public String getproduct() {
+		return product;
 	}
 
-	public void setSender(String sender) {
-		Tran.sender = sender;
+	public void setproduct(String product) {
+		Tran.product = product;
 	}
 
-	public String getRecipient() {
-		return recipient;
+	public String getnation() {
+		return nation;
 	}
 
-	public void setRecipient(String recipient) {
-		Tran.recipient = recipient;
+	public void setnation(String nation) {
+		Tran.nation = nation;
 	}
 
 	public String getAmount() {

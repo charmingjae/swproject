@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
+//import java.util.HashMap;
 
 
 
@@ -13,23 +13,23 @@ public class Block {
 	public String hash;
 	public String previousHash;
 	private String data; //our data will be a simple message.
-	public String sender;
-	public String recipient;
-	public String amount;
+//	public String product;
+//	public String recipient;
+//	public String amount;
 	public int[] chain = null;
 	private long timeStamp; //as number of milliseconds since 1/1/1970.
 	private int nonce;
-	public List<Object> transSender;
-	public Map<String, String> mapTrans = new HashMap<>();
+	public List<Object> transList;
+//	public Map<String, String> mapTrans = new HashMap<>();
 	
 	
 //	Block Constructor.
 	public Block(int index, String data, String previousHash, List<Object> transactions, Map<String, String> mapTrans) {
-		transSender = new ArrayList<Object>();
+		transList = new ArrayList<Object>();
 		this.index = index + 1;
 		this.data = data;
-		this.transSender = transactions;
-		this.mapTrans = mapTrans;
+		this.transList = transactions;
+//		this.mapTrans = mapTrans;
 		this.previousHash = previousHash;
 		this.timeStamp = new Date().getTime();
 		this.hash = calculateHash(); //Making sure we do this after we set the other values.
